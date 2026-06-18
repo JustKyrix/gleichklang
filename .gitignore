@@ -1,0 +1,9 @@
+# dependencies (recreated via: npm install)
+node_modules/
+
+# editor / OS cruft
+.DS_Store
+Thumbs.db
+
+# sass source maps
+*.css.map

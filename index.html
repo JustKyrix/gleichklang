@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gleichklang — Institut für Work-Life-Balance</title>
+  <meta name="description" content="gleichklang — Institut für Work-Life-Balance in Sundern. Yoga, Meditation, Achtsamkeit und Coaching für mehr Balance zwischen Beruf und Leben.">
+
+  <!-- Schriften -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons (lokal aus node_modules) -->
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+
+  <!-- Eigenes Stylesheet (kompiliert aus scss/style.scss — enthält Bootstrap 5.3) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#start" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 btn btn-dark btn-sm">Zum Inhalt springen</a>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <nav id="mainNav" class="navbar navbar-expand-lg gk-nav fixed-top">
+    <div class="container">
+      <!-- LOGO: Platzhalter — hier später das echte Logo einsetzen -->
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-semibold" href="#start">
+        <img src="./gleichklang_main.svg" alt="logo" class="logo">
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Menü öffnen">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navItems">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#start">Start</a></li>
+          <li class="nav-item"><a class="nav-link" href="#philosophie">Philosophie</a></li>
+          <li class="nav-item"><a class="nav-link" href="#angebote">Angebote</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ablauf">Ablauf</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stimmen">Stimmen</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-primary rounded-pill px-4" href="#kontakt">Termin vereinbaren</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================ HERO ============================ -->
+  <header id="start" class="hero">
+    <div class="ripple-stack" aria-hidden="true">
+      <span style="--o:.5"></span><span style="--o:.4"></span><span style="--o:.3"></span><span style="--o:.2"></span>
+    </div>
+
+    <div class="container position-relative" style="z-index:1;">
+      <div class="row align-items-center g-5 py-5" style="min-height:100vh;">
+        <div class="col-lg-6 reveal-group">
+          <p class="eyebrow reveal mb-3">Institut für Work-Life-Balance</p>
+          <h1 class="display-3 fw-semibold mb-4 reveal">Wieder im Gleichklang mit dir.</h1>
+          <p class="fs-5 text-body-secondary mb-4 reveal" style="max-width:34rem;">
+            Yoga, Meditation und Coaching für Menschen, die zwischen Beruf und Alltag
+            ihre Mitte suchen — achtsam begleitet, ganz in deinem Tempo.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4 reveal">
+            <a href="#kontakt" class="btn btn-primary btn-lg rounded-pill">Termin vereinbaren</a>
+            <a href="#angebote" class="btn btn-outline-secondary btn-lg rounded-pill">
+              Angebote entdecken <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-center gap-3 reveal">
+            <div class="text-warning" aria-hidden="true">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+            <p class="mb-0 small text-body-secondary">
+              <strong class="text-dark">4,9&nbsp;von&nbsp;5</strong> · über 320 Bewertungen
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <div class="hero__media ratio ratio-4x3">
+            <!-- Foto: freie Nutzung (Unsplash) — bei Bedarf leicht austauschbar -->
+            <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1100&q=80"
+                 alt="Sonnenlicht fällt sanft durch einen ruhigen Wald">
+          </div>
+          <div class="hero__badge d-flex align-items-center gap-2" style="left:1.25rem; bottom:1.25rem;">
+            <i class="bi bi-geo-alt-fill text-primary fs-5"></i>
+            <span class="small"><strong>Sundern</strong> · Sauerland<br><span class="text-body-secondary">Mo–Fr 8–20&nbsp;Uhr</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================ KENNZAHLEN ============================ -->
+  <section class="py-5 position-relative overflow-hidden" style="background:var(--gk-tinte);">
+    <div class="ripple-stack" aria-hidden="true" style="opacity:.4;">
+      <span style="--o:.5"></span><span style="--o:.35"></span><span style="--o:.25"></span>
+    </div>
+    <div class="container position-relative" style="z-index:1;">
+      <div class="row text-center g-4 py-3 reveal-group">
+        <div class="col-6 col-lg-3 reveal">
+          <div class="stat__num"><span data-count="3000" data-suffix="+">0</span></div>
+          <p class="mb-0 mt-2 small text-white-50">begleitete Menschen</p>
+        </div>
+        <div class="col-6 col-lg-3 reveal">
+          <div class="stat__num"><span data-count="12">0</span></div>
+          <p class="mb-0 mt-2 small text-white-50">erfahrene Coaches</p>
+        </div>
+        <div class="col-6 col-lg-3 reveal">
+          <div class="stat__num"><span data-count="98" data-suffix="&#8239;%">0</span></div>
+          <p class="mb-0 mt-2 small text-white-50">Weiterempfehlung</p>
+        </div>
+        <div class="col-6 col-lg-3 reveal">
+          <div class="stat__num"><span data-count="25">0</span></div>
+          <p class="mb-0 mt-2 small text-white-50">Kurse pro Woche</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PHILOSOPHIE ============================ -->
+  <section id="philosophie" class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80"
+                 alt="Ruhiger Waldweg durch hohe Bäume"
+                 class="img-fluid rounded-4 shadow-soft w-100" style="object-fit:cover; aspect-ratio:4/5;">
+            <div class="hero__badge d-none d-md-flex align-items-center gap-2" style="right:-1rem; bottom:1.5rem;">
+              <i class="bi bi-patch-check-fill text-primary fs-4"></i>
+              <span class="small"><strong>Seit 2014</strong><br><span class="text-body-secondary">in Sundern</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <p class="eyebrow mb-3">Unsere Philosophie</p>
+          <h2 class="display-5 fw-semibold mb-4">Balance ist kein Ziel,<br>sondern ein Rhythmus.</h2>
+          <p class="fs-5 text-body-secondary mb-4">
+            „Gleichklang" bedeutet für uns: Körper, Geist und Alltag schwingen wieder im
+            selben Takt. Wir glauben nicht an schnelle Lösungen, sondern an kleine,
+            tragfähige Schritte — eingebettet in deinen ganz normalen Wochenablauf.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <p class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Ganzheitlich</strong></p>
+              <p class="small text-body-secondary mb-0">Bewegung, Atmung und mentale Stärke greifen ineinander.</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Individuell</strong></p>
+              <p class="small text-body-secondary mb-0">Jeder Weg beginnt mit einem Gespräch, nicht mit einem Plan.</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Wissenschaftlich</strong></p>
+              <p class="small text-body-secondary mb-0">Methoden wie MBSR sind erprobt und wirksam, z.&nbsp;B. bei Stress.</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Alltagsnah</strong></p>
+              <p class="small text-body-secondary mb-0">Übungen, die zwischen zwei Terminen Platz finden.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ANGEBOTE ============================ -->
+  <section id="angebote" class="section bg-creme">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 reveal" style="max-width:42rem;">
+        <p class="eyebrow eyebrow--center justify-content-center mb-3">Unsere Angebote</p>
+        <h2 class="display-5 fw-semibold mb-3">Wege zu mehr Balance</h2>
+        <p class="fs-5 text-body-secondary mb-0">
+          Sechs aufeinander abgestimmte Formate — einzeln buchbar oder als
+          begleitetes Programm über mehrere Wochen.
+        </p>
+      </div>
+
+      <div class="row g-4 reveal-group">
+        <!-- Yoga -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="service-card">
+            <span class="service-card__icon"><i class="bi bi-flower1"></i></span>
+            <h3 class="h5 fw-semibold mb-2">Yoga</h3>
+            <p class="text-body-secondary mb-3">Hatha- und Yin-Yoga für mehr Beweglichkeit, Kraft und ein ruhiges Nervensystem — in kleinen Gruppen.</p>
+            <p class="small mb-3 text-secondary">Kurse · ab 19&nbsp;€ / Einheit</p>
+            <a href="#kontakt" class="stretched-link text-decoration-none fw-semibold">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+          </article>
+        </div>
+        <!-- Meditation -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="service-card">
+            <span class="service-card__icon"><i class="bi bi-peace"></i></span>
+            <h3 class="h5 fw-semibold mb-2">Meditation</h3>
+            <p class="text-body-secondary mb-3">Geführte Sitzungen und Atemtechniken, die du schnell selbst anwenden kannst — morgens, mittags oder zum Feierabend.</p>
+            <p class="small mb-3 text-secondary">Drop-in · 18:00–18:45&nbsp;Uhr</p>
+            <a href="#kontakt" class="stretched-link text-decoration-none fw-semibold">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+          </article>
+        </div>
+        <!-- Achtsamkeit -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="service-card">
+            <span class="service-card__icon"><i class="bi bi-brightness-high"></i></span>
+            <h3 class="h5 fw-semibold mb-2">Achtsamkeit (MBSR)</h3>
+            <p class="text-body-secondary mb-3">Der bewährte 8-Wochen-Kurs zur Stressbewältigung durch Achtsamkeit — strukturiert und wissenschaftlich fundiert.</p>
+            <p class="small mb-3 text-secondary">8 Wochen · Kursstart quartalsweise</p>
+            <a href="#kontakt" class="stretched-link text-decoration-none fw-semibold">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+          </article>
+        </div>
+        <!-- Stressmanagement -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="service-card">
+            <span class="service-card__icon"><i class="bi bi-heart-pulse"></i></span>
+            <h3 class="h5 fw-semibold mb-2">Stressmanagement</h3>
+            <p class="text-body-secondary mb-3">Praktische Strategien für Beruf und Alltag: Grenzen setzen, Pausen gestalten und Energie bewusst einteilen.</p>
+            <p class="small mb-3 text-secondary">Workshop · halbtägig</p>
+            <a href="#kontakt" class="stretched-link text-decoration-none fw-semibold">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+          </article>
+        </div>
+        <!-- Ernährung -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="service-card">
+            <span class="service-card__icon"><i class="bi bi-cup-hot"></i></span>
+            <h3 class="h5 fw-semibold mb-2">Ernährung &amp; Balance</h3>
+            <p class="text-body-secondary mb-3">Einfache, alltagstaugliche Impulse für eine Ernährung, die dich trägt statt belastet — ohne Verbote.</p>
+            <p class="small mb-3 text-secondary">Beratung · 60&nbsp;Minuten</p>
+            <a href="#kontakt" class="stretched-link text-decoration-none fw-semibold">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+          </article>
+        </div>
+        <!-- Business-Coaching -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="service-card">
+            <span class="service-card__icon"><i class="bi bi-briefcase"></i></span>
+            <h3 class="h5 fw-semibold mb-2">Business-Coaching</h3>
+            <p class="text-body-secondary mb-3">Für Teams und Führungskräfte: gesunde Strukturen, klare Kommunikation und nachhaltige Work-Life-Balance im Unternehmen.</p>
+            <p class="small mb-3 text-secondary">Inhouse · auf Anfrage</p>
+            <a href="#kontakt" class="stretched-link text-decoration-none fw-semibold">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WARUM / VORTEILE ============================ -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2 reveal">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80"
+               alt="Stiller See im Morgenlicht, umgeben von Bäumen"
+               class="img-fluid rounded-4 shadow-soft w-100" style="object-fit:cover; aspect-ratio:5/4;">
+        </div>
+        <div class="col-lg-6 order-lg-1 reveal">
+          <p class="eyebrow mb-3">Warum gleichklang</p>
+          <h2 class="display-5 fw-semibold mb-4">Begleitung, die zu deinem Leben passt</h2>
+          <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+            <li class="d-flex gap-3">
+              <i class="bi bi-people text-primary fs-4"></i>
+              <span><strong>Kleine Gruppen.</strong> Maximal acht Teilnehmende — genug Raum für persönliche Begleitung.</span>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-calendar2-week text-primary fs-4"></i>
+              <span><strong>Flexible Zeiten.</strong> Früh-, Mittags- und Abendkurse von Montag bis Freitag.</span>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-house-heart text-primary fs-4"></i>
+              <span><strong>Vor Ort &amp; online.</strong> Komm ins Studio in Sundern oder nimm bequem von zu Hause teil.</span>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-mortarboard text-primary fs-4"></i>
+              <span><strong>Zertifiziert.</strong> Unsere Coaches sind ausgebildet und bilden sich laufend weiter.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ABLAUF ============================ -->
+  <section id="ablauf" class="section bg-minze">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 reveal" style="max-width:42rem;">
+        <p class="eyebrow eyebrow--center justify-content-center mb-3">So arbeiten wir</p>
+        <h2 class="display-5 fw-semibold mb-3">In drei Schritten zur Balance</h2>
+        <p class="fs-5 text-body-secondary mb-0">Kein Programm von der Stange — wir starten dort, wo du gerade stehst.</p>
+      </div>
+
+      <div class="row g-4 reveal-group">
+        <div class="col-md-4 reveal">
+          <div class="card h-100 bg-white shadow-soft-sm p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="step__num">01</span>
+              <i class="bi bi-chat-heart fs-3 text-primary"></i>
+            </div>
+            <h3 class="h5 fw-semibold mb-2">Kennenlernen</h3>
+            <p class="text-body-secondary mb-0">In einem kostenlosen Erstgespräch klären wir, was dich beschäftigt und was du dir wünschst.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 bg-white shadow-soft-sm p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="step__num">02</span>
+              <i class="bi bi-compass fs-3 text-primary"></i>
+            </div>
+            <h3 class="h5 fw-semibold mb-2">Weg finden</h3>
+            <p class="text-body-secondary mb-0">Gemeinsam stellen wir dein Programm zusammen — passend zu deinem Alltag und deinem Tempo.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 bg-white shadow-soft-sm p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="step__num">03</span>
+              <i class="bi bi-arrow-repeat fs-3 text-primary"></i>
+            </div>
+            <h3 class="h5 fw-semibold mb-2">Dranbleiben</h3>
+            <p class="text-body-secondary mb-0">Wir begleiten dich kontinuierlich, passen an, wo nötig — bis Balance zur Gewohnheit wird.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ STIMMEN (Carousel) ============================ -->
+  <section id="stimmen" class="section">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 reveal" style="max-width:42rem;">
+        <p class="eyebrow eyebrow--center justify-content-center mb-3">Stimmen</p>
+        <h2 class="display-5 fw-semibold mb-0">Was Teilnehmende erzählen</h2>
+      </div>
+
+      <div class="row justify-content-center reveal">
+        <div class="col-lg-9">
+          <div id="testimonials" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-inner text-center px-lg-5">
+
+              <div class="carousel-item active">
+                <span class="quote-mark d-block mb-3">„</span>
+                <p class="fs-4 fw-medium mb-4" style="font-family:'Fraunces',serif;">
+                  Nach dem MBSR-Kurs schlafe ich wieder durch. Ich habe gelernt, den Feierabend wirklich als Feierabend zu nehmen.
+                </p>
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="" width="64" height="64" class="rounded-circle mb-2">
+                <p class="mb-0"><strong>Katharina M.</strong><br><span class="small text-body-secondary">Projektleiterin</span></p>
+              </div>
+
+              <div class="carousel-item">
+                <span class="quote-mark d-block mb-3">„</span>
+                <p class="fs-4 fw-medium mb-4" style="font-family:'Fraunces',serif;">
+                  Die kleinen Gruppen machen den Unterschied. Hier wird auf mich eingegangen — und nicht auf einen Durchschnitt.
+                </p>
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="" width="64" height="64" class="rounded-circle mb-2">
+                <p class="mb-0"><strong>Daniel K.</strong><br><span class="small text-body-secondary">Selbstständig</span></p>
+              </div>
+
+              <div class="carousel-item">
+                <span class="quote-mark d-block mb-3">„</span>
+                <p class="fs-4 fw-medium mb-4" style="font-family:'Fraunces',serif;">
+                  Wir haben gleichklang als Team gebucht. Seitdem reden wir offener über Belastung — das hat unsere Zusammenarbeit verändert.
+                </p>
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" width="64" height="64" class="rounded-circle mb-2">
+                <p class="mb-0"><strong>Sandra B.</strong><br><span class="small text-body-secondary">Teamleitung, Mittelstand</span></p>
+              </div>
+
+            </div>
+
+            <div class="carousel-indicators position-static mt-4">
+              <button type="button" data-bs-target="#testimonials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Stimme 1"></button>
+              <button type="button" data-bs-target="#testimonials" data-bs-slide-to="1" aria-label="Stimme 2"></button>
+              <button type="button" data-bs-target="#testimonials" data-bs-slide-to="2" aria-label="Stimme 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FAQ ============================ -->
+  <section class="section bg-creme">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5 reveal">
+          <p class="eyebrow mb-3">Häufige Fragen</p>
+          <h2 class="display-5 fw-semibold mb-3">Gut zu wissen</h2>
+          <p class="text-body-secondary mb-4">Noch eine Frage offen? Schreib uns einfach — wir antworten in der Regel innerhalb eines Werktages.</p>
+          <a href="#kontakt" class="btn btn-primary rounded-pill px-4">Frage stellen</a>
+        </div>
+        <div class="col-lg-7 reveal">
+          <div class="accordion accordion-flush" id="faq">
+            <div class="accordion-item bg-transparent">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Brauche ich Vorerfahrung?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body text-body-secondary">Nein. Alle Kurse sind für Einsteiger geeignet; wir passen Tempo und Übungen an dein Niveau an.</div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Was kostet ein Kurs?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body text-body-secondary">Einzelne Einheiten beginnen bei 19&nbsp;€. Für laufende Kurse und Programme gibt es vergünstigte Pakete — Details im Erstgespräch.</div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Werden die Kosten von der Krankenkasse übernommen?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body text-body-secondary">Viele Präventionskurse, z.&nbsp;B. MBSR, werden von gesetzlichen Krankenkassen anteilig bezuschusst. Wir beraten dich gern dazu.</div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Kann ich auch online teilnehmen?
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body text-body-secondary">Ja. Die meisten Formate bieten wir parallel vor Ort in Sundern und als Live-Stream an.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA-BAND ============================ -->
+  <section class="py-5" style="background:linear-gradient(120deg, var(--gk-salbei), var(--gk-tiefsalbei));">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-4 py-3 text-white reveal">
+        <div class="col-lg-8">
+          <h2 class="display-6 fw-semibold mb-2">Bereit, wieder zur Ruhe zu kommen?</h2>
+          <p class="fs-5 mb-0 text-white-50">Sichere dir ein kostenloses, unverbindliches Erstgespräch.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="#kontakt" class="btn btn-light btn-lg rounded-pill px-4 text-secondary fw-semibold">Jetzt Termin sichern</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ KONTAKT ============================ -->
+  <section id="kontakt" class="section">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Kontaktinfos -->
+        <div class="col-lg-5 reveal">
+          <p class="eyebrow mb-3">Kontakt</p>
+          <h2 class="display-5 fw-semibold mb-4">Lass uns sprechen</h2>
+          <p class="text-body-secondary mb-4">Erzähl uns kurz, worum es geht — wir melden uns zeitnah mit einem Terminvorschlag.</p>
+
+          <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+            <li class="d-flex gap-3">
+              <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+              <span>gleichklang Institut für Work-Life-Balance<br>Hauptstraße 27 · 59846 Sundern (Sauerland)</span>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-telephone-fill text-primary fs-4"></i>
+              <a href="tel:+492933987650">+49 2933 98765&#8209;0</a>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-envelope-fill text-primary fs-4"></i>
+              <a href="mailto:info@gleichklang-institut.de">info@gleichklang-institut.de</a>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-clock-fill text-primary fs-4"></i>
+              <span>Mo–Fr 8–20&nbsp;Uhr · Sa 9–13&nbsp;Uhr</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formular -->
+        <div class="col-lg-7 reveal">
+          <div class="card contact-card bg-creme p-4 p-md-5">
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="cName" placeholder="Name" required>
+                    <label for="cName">Name</label>
+                    <div class="invalid-feedback">Bitte gib deinen Namen an.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="cMail" placeholder="E-Mail" required>
+                    <label for="cMail">E-Mail</label>
+                    <div class="invalid-feedback">Bitte gib eine gültige E-Mail-Adresse an.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" id="cPhone" placeholder="Telefon">
+                    <label for="cPhone">Telefon (optional)</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <select class="form-select" id="cTopic" required>
+                      <option value="" selected disabled>Bitte wählen …</option>
+                      <option>Kostenloses Erstgespräch</option>
+                      <option>Yoga</option>
+                      <option>Meditation</option>
+                      <option>Achtsamkeit (MBSR)</option>
+                      <option>Business-Coaching</option>
+                      <option>Sonstiges</option>
+                    </select>
+                    <label for="cTopic">Anliegen</label>
+                    <div class="invalid-feedback">Bitte wähle ein Anliegen.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="cMsg" placeholder="Nachricht" style="height:8rem" required></textarea>
+                    <label for="cMsg">Deine Nachricht</label>
+                    <div class="invalid-feedback">Bitte schreib uns ein paar Zeilen.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cPrivacy" required>
+                    <label class="form-check-label small text-body-secondary" for="cPrivacy">
+                      Ich bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden.
+                    </label>
+                    <div class="invalid-feedback">Ohne Einverständnis können wir die Anfrage leider nicht bearbeiten.</div>
+                  </div>
+                </div>
+                <div class="col-12 d-grid d-sm-block">
+                  <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4">Nachricht senden</button>
+                </div>
+              </div>
+            </form>
+
+            <div id="formSuccess" class="d-none text-center py-4">
+              <i class="bi bi-check-circle-fill text-primary" style="font-size:3rem;"></i>
+              <h3 class="h4 fw-semibold mt-3 mb-2">Danke für deine Nachricht!</h3>
+              <p class="text-body-secondary mb-0">Wir melden uns innerhalb eines Werktages bei dir. <span class="d-block small mt-2">(Hinweis: Dies ist ein Mockup — es wird nichts wirklich versendet.)</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 pb-4">
+        <div class="col-lg-4">
+          <!-- LOGO: Platzhalter — hier später das echte Logo einsetzen -->
+          <a class="d-inline-flex align-items-center gap-2 text-white text-decoration-none mb-3" href="#start">
+             <img src="./gleichklang_main.svg" alt="logo" class="logo-footer">
+          </a>
+          <p class="footer__legal mb-4" style="max-width:22rem;">Institut für Work-Life-Balance. Achtsam begleitet — zwischen Beruf und Leben deine Mitte finden.</p>
+          <div class="d-flex gap-2">
+            <a class="social-link" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="social-link" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a class="social-link" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="social-link" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <p class="footer__head mb-3">Navigation</p>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="#philosophie" class="text-decoration-none">Philosophie</a></li>
+            <li><a href="#angebote" class="text-decoration-none">Angebote</a></li>
+            <li><a href="#ablauf" class="text-decoration-none">Ablauf</a></li>
+            <li><a href="#stimmen" class="text-decoration-none">Stimmen</a></li>
+            <li><a href="#kontakt" class="text-decoration-none">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <p class="footer__head mb-3">Angebote</p>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="#angebote" class="text-decoration-none">Yoga</a></li>
+            <li><a href="#angebote" class="text-decoration-none">Meditation</a></li>
+            <li><a href="#angebote" class="text-decoration-none">Achtsamkeit (MBSR)</a></li>
+            <li><a href="#angebote" class="text-decoration-none">Stressmanagement</a></li>
+            <li><a href="#angebote" class="text-decoration-none">Business-Coaching</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <p class="footer__head mb-3">Kontakt</p>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><i class="bi bi-geo-alt me-2"></i>Hauptstraße 27, 59846 Sundern</li>
+            <li><i class="bi bi-telephone me-2"></i>+49 2933 98765&#8209;0</li>
+            <li><i class="bi bi-envelope me-2"></i>info@gleichklang-institut.de</li>
+            <li><i class="bi bi-globe me-2"></i>www.gleichklang-institut.de</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Pflichtangaben (GmbH) — gemäß Vorgaben Geschäftsbrief / LF8 -->
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-8">
+          <p class="footer__legal mb-0">
+            gleichklang Institut für Work-Life-Balance GmbH · Sitz der Gesellschaft: Sundern (Sauerland) ·
+            Registergericht: Amtsgericht Arnsberg, HRB&nbsp;14582 ·
+            Geschäftsführer: Anna-Lena Berger, Tobias Schulte
+          </p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <ul class="list-inline footer__legal mb-0">
+            <li class="list-inline-item"><a href="#" class="text-decoration-none">Impressum</a></li>
+            <li class="list-inline-item">·</li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__legal text-center mt-4 mb-0">© 2026 gleichklang Institut für Work-Life-Balance GmbH. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- Zurück nach oben -->
+  <button id="backToTop" class="btn btn-primary" aria-label="Nach oben scrollen"><i class="bi bi-chevron-up"></i></button>
+
+  <!-- Skripte: jQuery -> Bootstrap Bundle -> eigene Interaktionen (lokal aus node_modules) -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
